@@ -64,3 +64,6 @@
     width: auto;
     height: auto;
 }
+.box:hover {
+	background-color: grey;
+}
