@@ -1,13 +1,60 @@
+#body {
+	display: flex;
+	background-color: rgb(201, 255, 119);
+	flex-direction: column;
+}
+.main {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+.h1 {
+	color: rgb(238, 167, 13);
+	font-size: 50px;
+}
+.btnDiv {
+	display: flex;
+	flex-direction: column;
+	margin: 30px;
+	padding: 10px;
+}
+.button {
+	padding: 5px;
+	margin: 5px;
+	border-radius: 20px;
+	color: rgb(22, 22, 21);
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: large;
+	font-weight: 600;
+}
+#gridLinesBtn {
+	background-color: rgb(245, 178, 8);
+}
+#gridLinesBtn:hover {
+	background-color: rgb(194, 183, 155);
+}
+#eraseGridBtn {
+	background-color: goldenrod;
+}
+#eraseGridBtn:hover {
+	background-color: rgb(170, 154, 114);
+}
+#createGridBtn {
+	background-color: yellow;
+}
+#createGridBtn:hover {
+	background-color: rgb(94, 94, 22);
+}
 .container {
 	display: grid;
 	position: relative;
 	outline:1px solid #000;
 	font-size: 0;
-	margin:auto;
 	height:500px;
 	width:500px;
 	padding: 0;
 	border: none;
+	background-color: rgb(255, 255, 255);
 }
 .box{
 	user-select: none;
