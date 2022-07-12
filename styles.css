@@ -26,24 +26,24 @@
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: large;
 	font-weight: 600;
-}
-#gridLinesBtn {
-	background-color: rgb(245, 178, 8);
-}
-#gridLinesBtn:hover {
-	background-color: rgb(194, 183, 155);
-}
-#eraseGridBtn {
 	background-color: goldenrod;
 }
-#eraseGridBtn:hover {
-	background-color: rgb(170, 154, 114);
+.button:hover {
+	background-color:  rgb(194, 183, 155);
+	color:  rgb(194, 34, 34);;
 }
-#createGridBtn {
-	background-color: yellow;
+#currentColor {
+	background-color: goldenrod;
+	height: 50px;
+	width: 80px;
 }
-#createGridBtn:hover {
-	background-color: rgb(94, 94, 22);
+.para {
+	margin-bottom: 0px;
+	color: rgb(238, 167, 13);
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 25px;
 }
 .container {
 	display: grid;
@@ -54,7 +54,7 @@
 	width:500px;
 	padding: 0;
 	border: none;
-	background-color: rgb(255, 255, 255);
+	background-color: white;
 }
 .box{
 	user-select: none;

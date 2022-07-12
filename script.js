@@ -23,8 +23,6 @@ let container = document.createElement('div');
     container.classList.add('container');
     main.appendChild(container);
 
-let numberOfBoxes = 16;
-
 let mouseDown = false
     document.body.onmousedown = () => (mouseDown = true)
     document.body.onmouseup = () => (mouseDown = false)
@@ -33,10 +31,23 @@ function eraseGrid () {
     container.innerHTML = '';
 }
 
+let colorDivPara = document.createElement('p');
+    colorDivPara.classList.add('para');
+    colorDivPara.textContent = ('Choose Your Color!!');
+    btnDiv.appendChild(colorDivPara);
+
+let currentColor = document.createElement('input');
+    currentColor.setAttribute('id', 'currentColor');
+    currentColor.setAttribute('type', 'color')
+    currentColor.classList.add('button');
+    btnDiv.appendChild(currentColor);
+
 function changeColor(e) {
     if (e.type === 'mouseover' && !mouseDown) return
-    e.target.style.backgroundColor = 'black';
+    e.target.style.backgroundColor = currentColor.value;
 }
+
+let numberOfBoxes = 16;
 
 function createGrid(numberOfBoxes) {
          container.style.gridTemplateColumns = `repeat(${numberOfBoxes}, 1fr)`
@@ -51,8 +62,6 @@ function createGrid(numberOfBoxes) {
 };
 };
 createGrid(numberOfBoxes);
-
-let box = document.querySelector('.box');
 
 function userGrid (boxesAmount) {
          boxesAmount = prompt('how many boxes per side Between 1 and 150?')
